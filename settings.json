@@ -1,0 +1,185 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["leader", "v"], "commands": [":vsplit"] }, // Split the window vertically
+    { "before": ["leader", "s"], "commands": [":split"] }, // Split the window horizontally
+    // Move quickly between panel groups
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // Moves the cursor to the beginning of the current line
+    {
+      "before": ["H"],
+      "after": ["0"]
+    },
+    // Moves the cursor to the end of the current line
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+
+    { "before": ["leader", "w"], "commands": ["workbench.action.files.save"] }, // save the active file
+    // close the active editor
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] }, // open the quick file search feature
+    // toggle activity bar visibility
+    {
+      "before": ["<leader>", "a", "b"],
+      "commands": ["workbench.action.toggleActivityBarVisibility"]
+    },
+    // toggle status bar visibility
+    {
+      "before": ["<leader>", "s", "b"],
+      "commands": ["workbench.action.toggleStatusbarVisibility"]
+    },
+    // clean up the list of recent files
+    {
+      "before": ["<leader>", "r", "f"],
+      "commands": ["workbench.action.clearRecentFiles"]
+    },
+    // switch to the next window
+    {
+      "before": ["<Tab>"],
+      "commands": [":bnext"]
+    },
+    // switch to the previous window
+    {
+      "before": ["<S-Tab>"],
+      "commands": [":bprevious"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+  ],
+
+  "vim.leader": "<space>", // Sets the character to use as a leader
+  // Disables the handling of certain control keys (avoids conflicts with default vscode settings)
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-b>": false,
+    "<C-v>": false
+  },
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.cursorSurroundingLines": 5,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggestFontSize": 12,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.lineNumbers": "relative",
+  "editor.wordWrap": "on",
+  "editor.detectIndentation": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "files.autoSave": "afterDelay",
+  "editor.scrollbar.verticalScrollbarSize": 2,
+  "editor.scrollbar.horizontalScrollbarSize": 2,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.fontLigatures": true,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.fontSize": 12,
+  "editor.lineHeight": 0,
+  "editor.rulers": [],
+  "editor.renderWhitespace": "none",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.guides.indentation": false,
+  "editor.linkedEditing": true,
+  "editor.cursorBlinking": "solid",
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.selectionHighlight": false,
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "window.menuBarVisibility": "toggle",
+  "workbench.editor.showTabs": true,
+  "window.titleBarStyle": "custom",
+  "workbench.editor.labelFormat": "short",
+  "[json]": {},
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+  "window.title": "アルクル",
+  "workbench.layoutControl.enabled": false,
+  "window.restoreWindows": "none",
+  "window.commandCenter": true,
+  "symbols.hidesExplorerArrows": false,
+  "breadcrumbs.enabled": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 12,
+  "telemetry.telemetryLevel": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "errorLens.fontStyleItalic": true,
+  "search.useIgnoreFiles": false,
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "readme",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "GitHub Dark",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none"
+}
